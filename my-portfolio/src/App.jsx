@@ -5,6 +5,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const App = () => {
@@ -29,7 +30,7 @@ const App = () => {
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}
       />
-      <main>{renderSection()}</main>
+      <main className="section">{renderSection()}</main>
       <Footer />
     </>
   );

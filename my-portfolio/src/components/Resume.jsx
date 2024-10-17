@@ -1,7 +1,8 @@
 import React from "react";
+import "../App.css";
 
 const Resume = () => (
-  <section>
+  <div className="section">
     <h2>Resume</h2>
     <a href="link-to-your-resume.pdf" download>
       Download Resume
@@ -13,7 +14,7 @@ const Resume = () => (
       <li>CSS</li>
       {/* Add more proficiencies... */}
     </ul>
-  </section>
+  </div>
 );
 
 export default Resume;

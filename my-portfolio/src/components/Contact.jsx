@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../App.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section>
+    <div className="section">
       <h2>Contact Me</h2>
       <form>
         <div>
@@ -72,7 +73,7 @@ const Contact = () => {
         </div>
         <button type="submit">Send</button>
       </form>
-    </section>
+    </div>
   );
 };
 

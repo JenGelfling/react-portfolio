@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 
 const projects = [
   {
@@ -20,7 +21,7 @@ const projects = [
 ];
 
 const Portfolio = () => (
-  <section>
+  <div className="section">
     <h2>My Projects</h2>
     <div>
       {projects.map((project) => (
@@ -54,7 +55,7 @@ const Portfolio = () => (
         </div>
       ))}
     </div>
-  </section>
+  </div>
 );
 
 export default Portfolio;
