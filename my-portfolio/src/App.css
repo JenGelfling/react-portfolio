@@ -3,21 +3,21 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Helps with sizing */
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #121212; /* Dark background color */
-  color: #ffffff; /* Light text color for contrast */
+  background-color: #121212;
+  color: #ffffff;
   margin: 0;
-  font-family: Arial, sans-serif; /* Set your desired font */
+  font-family: Arial, sans-serif;
 }
 
 .header {
-  padding: 20px; /* Add padding for spacing */
-  background-color: #1f1f1f; /* Header background color */
+  padding: 20px;
+  background-color: #1f1f1f;
   display: flex;
-  align-items: center; /* Center align items vertically */
+  align-items: center;
 }
 
 .header h1 {
