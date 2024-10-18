@@ -24,8 +24,6 @@ const projects = [
     deployedUrl: "https://www.moonshadowbodywork.com/",
     description: "This is the homepage for my Massage Therapy business.",
   },
-
-  // Add more projects as needed...
 ];
 
 const Portfolio = () => (
@@ -38,7 +36,7 @@ const Portfolio = () => (
             href={project.deployedUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="space"
+            className="portfolio-link space"
           >
             <img
               src={project.imageUrl}
@@ -47,11 +45,12 @@ const Portfolio = () => (
               height="250"
             />
           </a>
-          <h3>
+          <h3 className="portfolio-title">
             <a
               href={project.deployedUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className="portfolio-link"
             >
               {project.title}
             </a>
@@ -62,6 +61,7 @@ const Portfolio = () => (
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className="portfolio-link view-code-link"
             >
               View Code
             </a>

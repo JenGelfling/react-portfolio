@@ -21,7 +21,7 @@ body {
 }
 
 .header h1 {
-  margin: 0; /* Remove default margin */
+  margin: 0;
   color: #ffffff;
 }
 
@@ -34,6 +34,11 @@ body {
 }
 
 .section {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  padding: 20px; /* Add some padding */
   background-color: #1f1f1f;
   color: #ffffff;
 }
@@ -45,6 +50,7 @@ main {
 /* Styles for the portfolio projects */
 .section > div {
   margin-bottom: 20px; /* Space between project entries */
+  width: 100%; /* Full width for the container */
 }
 
 .section img {
@@ -57,12 +63,36 @@ h3 {
   margin: 10px 0; /* Consistent margins for headings */
 }
 
+/* App.css */
+
+.nav-link,
+.portfolio-link {
+  color: #ffffff; /* Light text color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* .nav-link:hover, */
+.portfolio-link:hover {
+  border-color: #646cff;
+  /* color: #f0c674; */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Additional styling for the project titles */
+.portfolio-title {
+  font-weight: bold; /* Make titles bold */
+}
+
+.view-code-link {
+  margin-bottom: 30px; /* Adjust the value as needed */
+}
+
 /* Additional styles for other components? */
 
-.section {
-  border: 1px solid red; /* To visualize the section */
+/* .section {
+  border: 1px solid red;
 }
 
 .section > div {
-  border: 1px solid blue; /* To visualize each project */
-}
+  border: 1px solid blue;
+} */
