@@ -1,5 +1,11 @@
 /* App.css */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Helps with sizing */
+}
+
 body {
   background-color: #121212; /* Dark background color */
   color: #ffffff; /* Light text color for contrast */
@@ -20,23 +26,43 @@ body {
 }
 
 .header img {
-  max-width: 200px; /* Set the image size */
+  max-width: 150px;
   width: auto;
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 10px; /* Space between text and image */
+  height: auto;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
 .section {
-  background-color: #1f1f1f; /* Dark background for sections */
+  background-color: #1f1f1f;
   color: #ffffff;
-  /* padding: 20px; /* Add padding for spacing */
-  /* margin: 10px; Space between sections */
-  border-radius: 5px; /* Optional: Rounded corners */
 }
 
 main {
-  padding: 20px; /* Padding for the main content */
+  padding: 20px;
 }
 
-/* Additional styles for other components can go here */
+/* Styles for the portfolio projects */
+.section > div {
+  margin-bottom: 20px; /* Space between project entries */
+}
+
+.section img {
+  max-width: 100%; /* Responsive images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h2,
+h3 {
+  margin: 10px 0; /* Consistent margins for headings */
+}
+
+/* Additional styles for other components? */
+
+.section {
+  border: 1px solid red; /* To visualize the section */
+}
+
+.section > div {
+  border: 1px solid blue; /* To visualize each project */
+}
